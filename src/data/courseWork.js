@@ -9,6 +9,8 @@ export const LabDeadlineData = [
     { name: 'Lab 8', start: '2026-09-30 18:50:00', end: '2026-12-30 23:59:59', },
 ];
 
+export const LabSubmissionFinalDeadline = '2026-12-30';
+
 const courseWorkData = {
     items: [
         { key: 0, name: '课程作业', cnt: 6, ratio: '15%' },

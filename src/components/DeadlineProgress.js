@@ -1,5 +1,13 @@
 import { Progress } from 'antd';
 import {FieldTimeOutlined} from "@ant-design/icons";
+import { LabDeadlineData, LabSubmissionFinalDeadline } from '../data/courseWork';
+
+const getLabDeadline = (() => {
+    const byName = Object.fromEntries(
+        LabDeadlineData.map(({ name, start, end }) => [name, { start, end }])
+    );
+    return ({ name, start, end }) => name ? (byName[name] ?? { start, end }) : { start, end };
+})();
 
 const deadlineProgress = (begin, end) => {
     if (!begin || !end) return 0;
@@ -49,14 +57,14 @@ const progressStyle = {
 };
 
 const DeadlineProgress = (props) => {
-    const { start, end } = props;
+    const { start, end } = getLabDeadline(props);
     const process = deadlineProgress(start, end);
     return (
         process === 100 ?
             <div style={containerStyle}>
                 <FieldTimeOutlined style={{ fontSize: 22, marginRight: '4px' }} />
                 <h5 style={headerStyle}>
-                    已超过建议完成时间，请务必在2026-12-30前提交该实验报告与数据
+                    已超过建议完成时间，请务必在{LabSubmissionFinalDeadline}前提交该实验报告与数据
                 </h5>
             </div>
             :

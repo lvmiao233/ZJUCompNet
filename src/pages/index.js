@@ -74,7 +74,7 @@ export default function Home() {
                 <section className="info-section">
                     <InfoCard icon={<FieldTimeOutlined />} title="课程信息">
                         <div>
-                            理论课程：周一 3-5节 玉泉教4-306<br />
+                            理论课程：周一 3-5节 玉泉教4-310<br />
                             实验教学：周一 11-13节 玉泉曹光彪西-304<br />
                             实验实践：周一 11-13节 玉泉曹光彪西-302<br />
                             课程网站：<a href="http://10.214.0.253/network/exercise/index.php">计算机网络课程网站</a>

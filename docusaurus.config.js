@@ -98,14 +98,14 @@ const config = {
       },
       metadata: [ {name: 'name', content: '浙大计网实验文档'}, ],
       image: 'img/zjucompnet-social-card.jpg',
-      announcementBar: {
-        id: '25-26_semester_end',
-        content:
-          '✅25-26学年秋冬学期的《计算机网络》课程已经结束，如需了解下一学年情况，请留意网站后续更新',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: true,
-      },// 如需使用倒计时，请使用<strong id="countdown-timer"></strong>并参考src/clientModules/countdown.js内实现配置
+      // announcementBar: {
+      //   id: '25-26_semester_end',
+      //   content:
+      //     '✅25-26学年秋冬学期的《计算机网络》课程已经结束，如需了解下一学年情况，请留意网站后续更新',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },// 如需使用倒计时，请使用<strong id="countdown-timer"></strong>并参考src/clientModules/countdown.js内实现配置
       navbar: {
         title: '计算机网络课程实验',
         logo: { alt: '计算机网络课程实验', src: 'img/logo.svg', },

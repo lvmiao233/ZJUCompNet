@@ -313,7 +313,7 @@ Wireshark 提供两种主要的过滤器，它们的区别非常重要：
 
 1.  **找到你的网关地址**: 打开命令行，输入 `ipconfig` (Windows) 或 `ifconfig` (macOS/Linux)，找到你当前网络的“默认网关 (Default Gateway)”地址，这通常是你的路由器地址，是一个理想的局域网 Ping 对象
 
-2.  **准备捕获**: 打开 Wireshark，在**显示过滤器**中输入 `arp or icmp or dns`（Ping域名时，请改为`arp or icmp or dns`），然后开始捕获
+2.  **准备捕获**: 打开 Wireshark，在**显示过滤器**中输入 `arp or icmp`（Ping域名时，请改为`arp or icmp or dns`），然后开始捕获
 
 3.  **清空 ARP 缓存并进行Ping**:
     *   (Windows)打开一个**管理员权限**的命令行窗口，输入 `netsh interface IP delete arpcache` 清空 ARP 缓存
